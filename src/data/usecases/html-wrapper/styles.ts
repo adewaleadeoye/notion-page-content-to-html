@@ -1,37 +1,7 @@
 export const STYLE = `\
 <style>
-html {
-  -webkit-print-color-adjust: exact;
-}
-
-* {
-  box-sizing: border-box;
-  -webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, sans-serif;
-  color: #37352F;
-}
-
-body {
-  line-height: 1.5;
-}
-
-@media only screen {
-  body {
-    margin: 2em auto;
-    max-width: 900px;
-    color: rgb(55, 53, 47);
-  }
-}
-
 img {
   max-width: 100%;
-  max-height: 70vh;
 }
 
 ol,
@@ -107,11 +77,12 @@ ol > li {
 
 h1,
 h2,
-h3 {
-  letter-spacing: -0.01em;
-  line-height: 1.2;
-  font-weight: 600;
-  margin-bottom: 0;
+h3, h4 {
+  line-height: 120%;
+    font-family: 'Manrope',sans-serif;
+    letter-spacing: -0.01562em;
+    padding-bottom: 32px
+    color: #1769B5;
 }
 
 .page-title {
@@ -156,15 +127,47 @@ img.icon {
 }
 
 blockquote {
-  font-size: 1.25em;
-  margin: 1em 0;
-  padding-left: 1em;
+  padding: 32px 0; 
+  font-size: 24px; 
+  font-weight: 700; 
+  font-style: italic; 
+  line-height: 150%; 
+  margin: 1em 0; 
+  padding-left: 32px; 
   border-left: 3px solid rgb(55, 53, 47);
+  color: #667785;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  letter-spacing: 0.00938em;
 }  
 
+p {
+  margin: 0;
+    color: #667785;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.00938em;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+a {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  font-family: 'Roboto',sans-serif;
+  text-decoration: none;
+  color: #1769B5;
+}
+
 h1 {
-  font-size: 1.875rem;
-  margin-top: 1.875rem;
+  margin: 0;
+    color: #1769B5;
+    font-size: 48px;
+    font-weight: 800;
 }
 
 h2 {
@@ -175,6 +178,14 @@ h2 {
 h3 {
   font-size: 1.25rem;
   margin-top: 1.25rem;
+}
+
+h4 {
+    margin: 0;
+    color: #101D28;
+    font-size: 18px;
+    font-weight: 800;
+    color: #667785;
 }
 
 .callout {
@@ -242,13 +253,5 @@ hr {
   background-size: 16px;
   margin-left: 2px;
   margin-right: 5px;
-}
-
-.checkbox-on {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 </style>`;
