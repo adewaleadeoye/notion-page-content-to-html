@@ -1,7 +1,7 @@
 {
-  "name": "notion-page-to-html",
-  "version": "1.1.4",
-  "description": "It converts public notion pages to html from url",
+  "name": "notion-page-content-to-html",
+  "version": "1.0.0",
+  "description": "It converts any public notion page to html using it's url",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -16,19 +16,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asnunes/notion-page-to-html.git"
+    "url": "git+https://github.com/adewaleadeoye/notion-page-content-to-html.git"
   },
   "keywords": [
     "notion",
     "page",
+    "databases",
     "html"
   ],
   "author": "Alexandre Nunes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/asnunes/notion-page-to-html/issues"
+    "url": "https://github.com/adewaleadeoye/notion-page-content-to-html.git/issues"
   },
-  "homepage": "https://github.com/asnunes/notion-page-to-html#readme",
+  "homepage": "https://github.com/adewaleadeoye/notion-page-content-to-html.git#readme",
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/nock": "^11.1.0",
