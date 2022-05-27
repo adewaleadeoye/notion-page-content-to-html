@@ -79,12 +79,14 @@ ol > li {
 
 h1,
 h2,
-h3, h4 {
-  line-height: 120%;
+h3,
+h4 {
+    line-height: 120%;
     font-family: 'Manrope',sans-serif;
     letter-spacing: -0.01562em;
     padding-bottom: 32px;
     color:#1769B5;
+    font-weight: 800;
 }
 
 .page-title {
@@ -129,7 +131,7 @@ img.icon {
 }
 
 blockquote {
-  padding: 32px 0; 
+  padding: 4px 0; 
   font-size: 24px; 
   font-weight: 700; 
   font-style: italic; 
@@ -152,6 +154,7 @@ p {
     letter-spacing: 0.00938em;
     font-size: 18px;
     text-decoration: none;
+    margin-bottom: 22px
   }
 
 a {
@@ -169,24 +172,22 @@ h1 {
   margin: 0;
     color: #1769B5;
     font-size: 48px;
-    font-weight: 800;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
+  font-size: 34px;
+  padding-top: 32px;
 }
 
 h3 {
-  font-size: 1.25rem;
-  margin-top: 1.25rem;
+  font-size: 26px;
+  padding-top: 32px;
 }
 
 h4 {
-  margin: 0;
+    margin: 0;
     color: #101D28;
     font-size: 18px;
-    font-weight: 800;
     color: #667785;
 }
 
