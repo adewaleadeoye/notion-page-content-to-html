@@ -81,7 +81,7 @@ h3, h4 {
   line-height: 120%;
     font-family: 'Manrope',sans-serif;
     letter-spacing: -0.01562em;
-    padding-bottom: 32px
+    padding-bottom: 32px;
     color: #1769B5;
 }
 
