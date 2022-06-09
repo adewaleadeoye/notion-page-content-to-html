@@ -58,7 +58,6 @@ export class NotionApiPrivatePageFetcher {
           const source = [[item[item.type]?.[innerType]?.url]];
           if (/^(?:\w+:)?\/\/([^\s\.]+\.\S{2}|localhost[\:?\d]*)\S*$/.test(source)) {
             properties['source'] = source;
-            console.log('source2', properties['source']);
           }
         } else {
           const itemEl = [];
