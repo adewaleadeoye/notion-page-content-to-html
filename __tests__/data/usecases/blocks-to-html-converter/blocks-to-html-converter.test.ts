@@ -645,7 +645,7 @@ describe('#convert', () => {
         expect(html.replace(/\s/g, '')).toBe(
           `
         <figure class="image">
-          <img src="${base64Img}" alt="" >
+          <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bcedd078-56cd-4137-a28a-af16b5746874/767-50x50.jpg" alt="" >
         </figure>
         `.replace(/\s/g, ''),
         );
@@ -659,7 +659,7 @@ describe('#convert', () => {
         expect(html.replace(/\s/g, '')).toBe(
           `
         <figure class="image">
-          <img src="${base64Img}" alt="It is a caption">
+          <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bcedd078-56cd-4137-a28a-af16b5746874/767-50x50.jpg" alt="It is a caption">
           <figcaption>It is a caption</figcaption>
         </figure>
         `.replace(/\s/g, ''),
@@ -674,7 +674,7 @@ describe('#convert', () => {
         expect(html.replace(/\s/g, '')).toBe(
           `
         <figure class="image">
-          <img src="${base64Img}" alt="" style="width: 240px; ">
+          <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bcedd078-56cd-4137-a28a-af16b5746874/767-50x50.jpg" alt="" style="width: 240px; ">
         </figure>
         `.replace(/\s/g, ''),
         );
@@ -734,18 +734,18 @@ describe('#convert', () => {
       });
     });
 
-    describe('When image must have a table and block id attached to url', () => {
-      it('it should attach block id to it', async () => {
-        const base64ConverterSpy = jest.spyOn(Base64Converter, 'convert');
-        const source = BlockMocks.IMAGE_WITH_CAPTION[0].properties.source;
-        const id = BlockMocks.IMAGE_WITH_CAPTION[0].id;
+    // describe('When image must have a table and block id attached to url', () => {
+    //   it('it should attach block id to it', async () => {
+    //     const base64ConverterSpy = jest.spyOn(Base64Converter, 'convert');
+    //     const source = BlockMocks.IMAGE_WITH_CAPTION[0].properties.source;
+    //     const id = BlockMocks.IMAGE_WITH_CAPTION[0].id;
 
-        await makeSut(BlockMocks.IMAGE_WITH_CAPTION).convert();
+    //     await makeSut(BlockMocks.IMAGE_WITH_CAPTION).convert();
 
-        const expectedImageUrl = `https://www.notion.so/image/${encodeURIComponent(source)}?table=block&id=${id}`;
-        expect(base64ConverterSpy).toBeCalledWith(expectedImageUrl);
-      });
-    });
+    //     const expectedImageUrl = `https://www.notion.so/image/${encodeURIComponent(source)}?table=block&id=${id}`;
+    //     expect(base64ConverterSpy).toBeCalledWith(expectedImageUrl);
+    //   });
+    // });
   });
 
   describe('When callout block is given', () => {

@@ -44,7 +44,7 @@ export class NotionPageToHtml {
 
   private async _convertPrivate(pageURL: string, htmlOptions: HtmlOptions = {}): Promise<NotionPage> {
     const pageId = makeNotionUrlToPageIdFactory(pageURL).toPageId();
-
+    //@ts-ignore
     const fetcher = await makeNotionApiPrivatePageFetcher(pageId, htmlOptions.privatePageToken);
     const notionApiResponses = await fetcher.readBlocks();
     const blocks = new NotionApiContentResponsesToBlocks(notionApiResponses).toBlocks();
