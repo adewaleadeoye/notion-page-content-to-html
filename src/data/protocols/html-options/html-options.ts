@@ -5,4 +5,5 @@ export type HtmlOptions = {
   excludeScripts?: boolean;
   excludeHeaderFromBody?: boolean;
   bodyContentOnly?: boolean;
+  privatePageToken?: string;
 };
